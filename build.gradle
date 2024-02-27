@@ -1,0 +1,35 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.3'
+	id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+repositories {
+	mavenCentral()
+	maven {
+		name = "clojars.org"
+		url = uri("https://repo.clojars.org")
+	}
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'jakarta.annotation:jakarta.annotation-api:3.0.0-M1'
+	implementation 'org.springframework.boot:spring-boot-starter-web:3.2.3'
+	//implementation 'org.appcelerator:titanium'
+	compileOnly 'org.projectlombok:lombok:1.18.30'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-validation:3.2.3'
+	implementation 'net.clojars.suuft:libretranslate-java:1.0.5'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
