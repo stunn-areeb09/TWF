@@ -1,13 +1,10 @@
 package com.example.TWF.dto;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 
 @Data
 public class RequestBody {
-
 
     String text;
 
