@@ -14,6 +14,7 @@ WORKDIR /app
 # Copy project files
 COPY . .
 
+# Create the directory for the manifest file
 # Build the JAR (if needed)
 # Replace 'mvn package' with your build command if necessary
 #RUN mvn package
