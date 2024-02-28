@@ -15,6 +15,11 @@ WORKDIR /app
 COPY . .
 
 # Create the directory for the manifest file
+RUN mkdir -p META-INF
+
+# Copy the manifest file (optional)
+COPY src/main/resources/META-INF/MANIFEST.MF META-INF/MANIFEST.MF
+
 # Build the JAR (if needed)
 # Replace 'mvn package' with your build command if necessary
 #RUN mvn package
