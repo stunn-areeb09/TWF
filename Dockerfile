@@ -25,7 +25,7 @@ COPY src/main/resources/META-INF/MANIFEST.MF META-INF/MANIFEST.MF
 #RUN mvn package
 
 # Copy the JAR to the final location
-COPY target/artifacts/TWF_jar2/TWF.jar /app/app.jar
+COPY target/artifacts/TWF_jar/TWF.jar /app/app.jar
 
 # Set the main class (replace with your actual class name)
 ENTRYPOINT ["java", "-cp", "app.jar", "com.example.TWF.TwfApplication"]

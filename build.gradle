@@ -38,6 +38,10 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.springframework.boot:spring-boot-starter-validation:3.2.3'
 	implementation 'net.clojars.suuft:libretranslate-java:1.0.5'
+	compileOnly 'org.projectlombok:lombok:1.18.22'
+	annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+
 }
 
 tasks.named('test') {
