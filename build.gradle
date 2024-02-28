@@ -40,8 +40,7 @@ dependencies {
 	implementation 'net.clojars.suuft:libretranslate-java:1.0.5'
 	compileOnly 'org.projectlombok:lombok:1.18.22'
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
-
-
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 }
 
 tasks.named('test') {
