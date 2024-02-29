@@ -1,5 +1,5 @@
 
-FROM gradle:8.5-jdk17-alpine AS build
+FROM amazoncorretto:17.0.10-alpine
 # Work directory for application
 
 WORKDIR /app
@@ -13,6 +13,8 @@ RUN mkdir -p META-INF
 # Copy the manifest file (optional)
 COPY src/main/resources/META-INF/MANIFEST.MF META-INF/MANIFEST.MF
 
+
+#RUN gradle package
 # Copy the JAR to the final location
 COPY target/artifacts/TWF_jar/TWF.jar /app/app.jar
 
