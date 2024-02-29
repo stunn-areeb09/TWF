@@ -1,4 +1,3 @@
-
 FROM amazoncorretto:17.0.10-alpine
 # Work directory for application
 
