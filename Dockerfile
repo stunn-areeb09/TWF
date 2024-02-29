@@ -22,7 +22,7 @@ COPY src/main/resources/META-INF/MANIFEST.MF META-INF/MANIFEST.MF
 
 # Build the JAR (if needed)
 # Replace 'mvn package' with your build command if necessary
-RUN ./gradlew build --no-daemon
+#RUN ./gradlew build --no-daemon
 
 # Copy the JAR to the final location
 COPY target/artifacts/TWF_jar/TWF.jar /app/app.jar
