@@ -41,9 +41,9 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok:1.18.22'
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
-	implementation('org.springframework.cloud:spring-cloud-starter-bootstrap')
 
 }
+
 
 tasks.named('test') {
 	useJUnitPlatform()
